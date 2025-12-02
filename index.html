@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Favorite Destinations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #1d3557;
+            color: white;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* responsive wrap */
+            margin: 20px;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 2px solid #457b9d;
+            border-radius: 10px;
+            width: 250px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            border-radius: 10px;
+        }
+
+        .card h2 {
+            color: #e63946;
+            margin: 10px 0 5px 0;
+        }
+
+        .card p {
+            color: #1d3557;
+            font-size: 14px;
+        }
+
+        /* Responsive for smaller screens */
+        @media(max-width: 800px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Favorite Destinations</h1>
+</header>
+
+<div class="container">
+    <div class="card">
+        <img src="paris.jpg" alt="Paris">
+        <h2>Paris</h2>
+        <p>The city of love and lights, famous for the Eiffel Tower and delicious cuisine.</p>
+    </div>
+
+    <div class="card">
+        <img src="Maldives.jpg" alt="Maldives">
+        <h2>Maldives</h2>
+        <p>A tropical paradise with crystal clear waters, perfect for relaxing and snorkeling.</p>
+    </div>
+
+    <div class="card">
+        <img src="Tokyo.jpg" alt="Tokyo">
+        <h2>Tokyo</h2>
+        <p>A vibrant city blending tradition and modernity, famous for sushi and skyscrapers.</p>
+    </div>
+</div>
+
+</body>
+</html>
